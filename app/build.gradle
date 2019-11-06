@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion sdkCompileVersion
+    buildToolsVersion buildToolsAllVersion
+    defaultConfig {
+        applicationId "com.exchangeapp"
+        minSdkVersion sdkMinVersion
+        targetSdkVersion sdkTargetVersion
+        versionCode 1
+        versionName "1.0"
+
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation commonDeps.appcompat
+    implementation commonDeps.materialDesign
+    implementation commonDeps.coreKtx
+    implementation commonDeps.constraintLayout
+    implementation commonDeps.timber
+    implementation commonDeps.okHttp
+    implementation commonDeps.okHttpInterceptor
+    implementation commonDeps.fragmentKtx
+
+
+    implementation kotlinDependencies.stdlib
+    implementation kotlinDependencies.rxKotlin
+
+    implementation rxDeps.core
+    implementation rxDeps.android
+
+    implementation retrofitDeps.core
+    implementation retrofitDeps.gson
+    implementation retrofitDeps.rxAdapter
+
+    implementation koinDependencies.core
+    implementation koinDependencies.core
+}
