@@ -8,7 +8,8 @@ import com.example.exchangeapp.ui.base.MvpView
 interface RatesContract {
 
     interface View : MvpView {
-        fun showRates(rates: List<Rate>, shouldNotifyAll: Boolean)
+        fun updateRates(rates: List<Rate>)
+        fun insertRates(rates: List<Rate>)
         fun showError(@StringRes resourceId: Int)
         fun setRefreshing(isRefreshing: Boolean)
     }

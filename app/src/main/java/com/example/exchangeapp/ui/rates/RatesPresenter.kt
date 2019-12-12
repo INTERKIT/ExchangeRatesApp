@@ -19,9 +19,8 @@ class RatesPresenter(
 ) : BasePresenter<RatesContract.View>(), RatesContract.Presenter {
 
     private var currentSymbol: String by Delegates.observable(Currency.EU.symbol) { _, oldValue, newValue ->
-        shouldNotifyAll = newValue != oldValue
-
-        if (shouldNotifyAll) fetchRates(newValue, currentAmount)
+        isNewCurrency = newValue != oldValue
+        if (isNewCurrency) fetchRates(newValue, currentAmount)
     }
 
     private var currentAmount: Double by Delegates.observable(1.0) { _, oldValue, newValue ->
@@ -30,7 +29,7 @@ class RatesPresenter(
 
     private var ratesJob: Job? = null
 
-    private var shouldNotifyAll = false
+    private var isNewCurrency = false
 
     override fun setAmount(amount: String) {
         currentAmount = amount.toDoubleOrNull() ?: 0.0
@@ -58,7 +57,7 @@ class RatesPresenter(
             try {
                 while (true) {
                     val rates = ratesInteractor.fetchRates(base, amount)
-                    val first = listOf(Rate(base, amount))
+                    val first = listOf(Rate(base, base, amount))
 
                     onRatesReceived(first + rates)
                     delay(DELAY_IN_MILLIS)
@@ -73,7 +72,11 @@ class RatesPresenter(
     }
 
     private fun onRatesReceived(rates: List<Rate>) {
-        view?.showRates(rates, shouldNotifyAll)
-        shouldNotifyAll = false
+        if (isNewCurrency) {
+            view?.updateRates(rates)
+            isNewCurrency = false
+        } else {
+            view?.insertRates(rates)
+        }
     }
 }

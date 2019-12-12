@@ -47,10 +47,6 @@ class RatesViewHolder(
             valueEditText.setSelection(valueEditText.text.length)
         }
 
-        valueEditText.setOnFocusChangeListener { _, hasFocus ->
-            if (hasFocus) onItemClickListener.invoke(item)
-        }
-
         itemView.setOnClickListener {
             onItemClickListener.invoke(item)
             valueEditText.requestFocus()

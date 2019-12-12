@@ -6,7 +6,7 @@ object RatesConverter {
         val rates = mutableListOf<Rate>()
 
         response.rates.forEach { (key, value) ->
-            rates.add(Rate(key, value))
+            rates.add(Rate(response.base, key, value))
         }
 
         return rates
