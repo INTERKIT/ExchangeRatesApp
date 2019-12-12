@@ -49,6 +49,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="end"
+        android:hint="@string/zero"
         android:inputType="numberDecimal"
         android:maxLines="1"
         android:textColor="@color/primary_black"

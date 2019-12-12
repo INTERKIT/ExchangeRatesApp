@@ -45,13 +45,6 @@ ext {
             rxKotlin: 'io.reactivex.rxjava2:rxkotlin:2.3.0',
     ]
 
-    rxDeps = [
-            // https://github.com/ReactiveX/RxJava
-            core   : "io.reactivex.rxjava2:rxjava:2.2.10",
-            // https://github.com/ReactiveX/RxAndroid
-            android: "io.reactivex.rxjava2:rxandroid:2.1.1",
-    ]
-
     retrofitVersion = '2.6.1'
     retrofitDeps = [
             // https://github.com/square/retrofit

@@ -53,8 +53,12 @@ class RatesFragment :
         presenter.start()
     }
 
-    override fun showRates(rates: List<Rate>) {
-        ratesAdapter.setItems(rates)
+    override fun showRates(rates: List<Rate>, shouldNotifyAll: Boolean) {
+        if (shouldNotifyAll) {
+            ratesAdapter.setItems(rates)
+        } else {
+            ratesAdapter.insertItems(rates)
+        }
     }
 
     override fun setRefreshing(isRefreshing: Boolean) {

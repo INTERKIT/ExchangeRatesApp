@@ -36,11 +36,19 @@ class RatesViewHolder(
         symbolTextView.text = data.symbol
         nameTextView.text = data.name
 
-        valueEditText.setText(item.value.toString())
+        if (!item.isZero()) {
+            valueEditText.setText(item.value.toString())
+        } else {
+            valueEditText.text.clear()
+        }
 
         if (position == 0) {
             valueEditText.addTextChangedListener(listener)
             valueEditText.setSelection(valueEditText.text.length)
+        }
+
+        valueEditText.setOnFocusChangeListener { _, hasFocus ->
+            if (hasFocus) onItemClickListener.invoke(item)
         }
 
         itemView.setOnClickListener {

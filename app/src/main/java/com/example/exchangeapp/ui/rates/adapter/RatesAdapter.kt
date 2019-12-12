@@ -24,4 +24,10 @@ class RatesAdapter(
         super.onViewRecycled(holder)
         holder.onViewRecycled()
     }
+
+    fun insertItems(items: List<Rate>) {
+        data.clear()
+        data.addAll(items)
+        notifyItemRangeChanged(1, data.size - 1, true)
+    }
 }

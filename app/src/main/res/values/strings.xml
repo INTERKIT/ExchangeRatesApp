@@ -2,6 +2,7 @@
     <string name="app_name">Rates</string>
 
     <string name="error_occurred">Connection problem, try later</string>
+    <string name="zero">0.0</string>
 
     <string-array name="country_array">
         <item>AUD, Australian Dollar, au</item>

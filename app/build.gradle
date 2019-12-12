@@ -46,9 +46,6 @@ dependencies {
     implementation kotlinDependencies.stdlib
     implementation kotlinDependencies.rxKotlin
 
-    implementation rxDeps.core
-    implementation rxDeps.android
-
     implementation retrofitDeps.core
     implementation retrofitDeps.gson
     implementation retrofitDeps.rxAdapter
