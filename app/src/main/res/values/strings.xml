@@ -1,3 +1,76 @@
 <resources>
-    <string name="app_name">ExchangeApp</string>
+    <string name="app_name">Rates</string>
+
+    <string name="error_occurred">Connection problem, try later</string>
+
+    <string-array name="country_array">
+        <item>AUD, Australian Dollar, au</item>
+        <item>BGN, Bulgarian Lev, bg</item>
+        <item>BRL, Brazilian Real, br</item>
+        <item>CAD, Canadian Dollar, ca</item>
+        <item>CHF, Swiss Franc, sz</item>
+        <item>CNY, Chinese Yuan, ch</item>
+        <item>CZK, Czech Koruna, cz</item>
+        <item>DKK, Danish Krone, dn</item>
+        <item>GBP, Pound Sterling, uk</item>
+        <item>HKD, Hong Kong Dollar, hk</item>
+        <item>HRK, Croatian Kuna, cr</item>
+        <item>HUF, Hungarian Forint, hu</item>
+        <item>IDR, Indonesian Rupiah, id</item>
+        <item>ILS, Israeli New Shekel, is</item>
+        <item>INR, Indian Rupee, in</item>
+        <item>ISK, Icelandic Króna, ic</item>
+        <item>JPY, Japanese Yen, ja</item>
+        <item>KRW, South Korean won, sk</item>
+        <item>MXN, Mexican Peso, mx</item>
+        <item>MYR, Malaysian Ringgit, ma</item>
+        <item>NOK, Norwegian Krone, no</item>
+        <item>NZD, New Zealand Dollar, nz</item>
+        <item>PHP, Philippine peso, ph</item>
+        <item>PLN, Polish Złoty, pl</item>
+        <item>RON, Romanian Leu, ro</item>
+        <item>RUB, Russian Ruble, ru</item>
+        <item>SEK, Swedish Krona, sw</item>
+        <item>SGD, Singapore Dollar, sg</item>
+        <item>THB, Thai Baht, th</item>
+        <item>TRY, Turkish Lira, tr</item>
+        <item>USD, US Dollar, us</item>
+        <item>ZAR, South African Rand, sa</item>
+        <item>EUR, Euro, eu</item>
+    </string-array>
 </resources>
+
+    <!--
+    <string name="country_australia">AUD, Australian Dollar, au</string>
+            <string name="country_bulgaria">BGN, Bulgarian Lev, bg</string>
+            <string name="country_brazil">BRL, Brazilian Real, br</string>
+            <string name="country_canada">CAD, Canadian Dollar, ca</string>
+            <string name="country_switzerland">CHF, Swiss Franc, sz</string>
+            <string name="country_china">CNY, Chinese Yuan, ch</string>
+            <string name="country_czechia">CZK, Czech Koruna, cz</string>
+            <string name="country_denmark">DKK, Danish Krone, dn</string>
+            <string name="country_britain">GBP, Pound Sterling, uk</string>
+            <string name="country_hong_kong">HKD, Hong Kong Dollar, hk</string>
+            <string name="country_croatia">HRK, Croatian Kuna, cr</string>
+            <string name="country_hungaria">HUF, Hungarian Forint, hu</string>
+            <string name="country_indonesia">IDR, Indonesian Rupiah, id</string>
+            <string name="country_israel">ILS, Israeli New Shekel, is</string>
+            <string name="country_india">INR, Indian Rupee, in</string>
+            <string name="country_iceland">ISK, Icelandic Króna, ic</string>
+            <string name="country_japan">JPY, Japanese Yen, ja</string>
+            <string name="country_south_korea">KRW, South Korean won, sk</string>
+            <string name="country_mexico">MXN, Mexican Peso, mx</string>
+            <string name="country_malaysia">MYR, Malaysian Ringgit, ma</string>
+            <string name="country_norway">NOK, Norwegian Krone, no</string>
+            <string name="country_new_zealand">NZD, New Zealand Dollar, nz</string>
+            <string name="country_philippines">PHP, Philippine peso, ph</string>
+            <string name="country_poland">PLN, Polish Złoty, pl</string>
+            <string name="country_romania">RON, Romanian Leu, ro</string>
+            <string name="country_russia">RUB, Russian Ruble, ru</string>
+            <string name="country_sweden">SEK, Swedish Krona, sw</string>
+            <string name="country_singapore">SGD, Singapore Dollar, sg</string>
+            <string name="country_thailand">THB, Thai Baht, th</string>
+            <string name="country_turkey">TRY, Turkish Lira, tr</string>
+            <string name="country_usa">USD, EU Dollar, us</string>
+            <string name="country_south_africa">ZAR, South African Rand, sa</string>
+            <string name="country_europe">EUR, Euro, eu</string>-->

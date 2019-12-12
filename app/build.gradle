@@ -39,6 +39,9 @@ dependencies {
     implementation commonDeps.okHttpInterceptor
     implementation commonDeps.fragmentKtx
 
+    implementation coroutinesDependencies.core
+    implementation coroutinesDependencies.rx
+    implementation coroutinesDependencies.android
 
     implementation kotlinDependencies.stdlib
     implementation kotlinDependencies.rxKotlin

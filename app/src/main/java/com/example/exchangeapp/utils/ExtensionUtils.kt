@@ -9,7 +9,7 @@ import com.example.exchangeapp.R
 
 fun AppCompatActivity.replaceFragment(
     fragment: Fragment,
-    @IdRes layoutId: Int = R.id.content,
+    @IdRes layoutId: Int = android.R.id.content,
     addToBackStack: Boolean = true,
     tag: String = fragment::class.java.name,
     @AnimRes enter: Int = R.anim.nav_enter,
