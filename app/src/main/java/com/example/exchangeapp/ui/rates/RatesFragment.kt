@@ -13,7 +13,6 @@ import com.example.exchangeapp.ui.base.BaseMvpFragment
 import com.example.exchangeapp.ui.rates.adapter.RatesAdapter
 import kotlinx.android.synthetic.main.fragment_rates.*
 import org.koin.android.ext.android.inject
-import timber.log.Timber
 
 class RatesFragment :
     BaseMvpFragment<RatesContract.View, RatesContract.Presenter>(),
@@ -55,14 +54,11 @@ class RatesFragment :
     }
 
     override fun updateRates(rates: List<Rate>) {
-        Timber.d("### upd")
-
         ratesAdapter.setItems(rates)
+        recyclerView.scrollToPosition(0)
     }
 
     override fun insertRates(rates: List<Rate>) {
-        Timber.d("### ins")
-
         ratesAdapter.insertItems(rates)
     }
 
