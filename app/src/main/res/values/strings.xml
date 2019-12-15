@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Rates</string>
 
-    <string name="error_occurred">Connection problem, try later</string>
+    <string name="error_occurred">Connection problem, swipe to bottom to refresh</string>
     <string name="zero">0.0</string>
 
     <string-array name="country_array">
@@ -40,38 +40,3 @@
         <item>EUR, Euro, eu</item>
     </string-array>
 </resources>
-
-    <!--
-    <string name="country_australia">AUD, Australian Dollar, au</string>
-            <string name="country_bulgaria">BGN, Bulgarian Lev, bg</string>
-            <string name="country_brazil">BRL, Brazilian Real, br</string>
-            <string name="country_canada">CAD, Canadian Dollar, ca</string>
-            <string name="country_switzerland">CHF, Swiss Franc, sz</string>
-            <string name="country_china">CNY, Chinese Yuan, ch</string>
-            <string name="country_czechia">CZK, Czech Koruna, cz</string>
-            <string name="country_denmark">DKK, Danish Krone, dn</string>
-            <string name="country_britain">GBP, Pound Sterling, uk</string>
-            <string name="country_hong_kong">HKD, Hong Kong Dollar, hk</string>
-            <string name="country_croatia">HRK, Croatian Kuna, cr</string>
-            <string name="country_hungaria">HUF, Hungarian Forint, hu</string>
-            <string name="country_indonesia">IDR, Indonesian Rupiah, id</string>
-            <string name="country_israel">ILS, Israeli New Shekel, is</string>
-            <string name="country_india">INR, Indian Rupee, in</string>
-            <string name="country_iceland">ISK, Icelandic Króna, ic</string>
-            <string name="country_japan">JPY, Japanese Yen, ja</string>
-            <string name="country_south_korea">KRW, South Korean won, sk</string>
-            <string name="country_mexico">MXN, Mexican Peso, mx</string>
-            <string name="country_malaysia">MYR, Malaysian Ringgit, ma</string>
-            <string name="country_norway">NOK, Norwegian Krone, no</string>
-            <string name="country_new_zealand">NZD, New Zealand Dollar, nz</string>
-            <string name="country_philippines">PHP, Philippine peso, ph</string>
-            <string name="country_poland">PLN, Polish Złoty, pl</string>
-            <string name="country_romania">RON, Romanian Leu, ro</string>
-            <string name="country_russia">RUB, Russian Ruble, ru</string>
-            <string name="country_sweden">SEK, Swedish Krona, sw</string>
-            <string name="country_singapore">SGD, Singapore Dollar, sg</string>
-            <string name="country_thailand">THB, Thai Baht, th</string>
-            <string name="country_turkey">TRY, Turkish Lira, tr</string>
-            <string name="country_usa">USD, EU Dollar, us</string>
-            <string name="country_south_africa">ZAR, South African Rand, sa</string>
-            <string name="country_europe">EUR, Euro, eu</string>-->
