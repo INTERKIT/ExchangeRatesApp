@@ -17,7 +17,7 @@ ext {
     commonDeps = [
             // https://mvnrepository.com/artifact/androidx.appcompat/appcompat
             appcompat        : "androidx.appcompat:appcompat:1.0.2",
-            materialDesign  : "com.google.android.material:material:1.0.0",
+            materialDesign   : "com.google.android.material:material:1.0.0",
             // https://github.com/JakeWharton/timber
             timber           : "com.jakewharton.timber:timber:4.7.1",
             // https://mvnrepository.com/artifact/androidx.core/core-ktx
@@ -57,5 +57,11 @@ ext {
     koinDependencies = [
             core : "org.koin:koin-android:$koinVersion",
             scope: "org.koin:koin-androidx-scope:$koinVersion"
+    ]
+
+    testDependencies = [
+            coroutinesTest: "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutinesVersion",
+            junit         : 'junit:junit:4.12',
+            mockk         : "io.mockk:mockk:1.9.3"
     ]
 }

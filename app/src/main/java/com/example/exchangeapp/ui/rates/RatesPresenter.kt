@@ -29,7 +29,7 @@ class RatesPresenter(
 
     private var ratesJob: Job? = null
 
-    private var isNewCurrency = false
+    private var isNewCurrency: Boolean = false
 
     override fun setAmount(amount: String) {
         currentAmount = amount.toDoubleOrNull() ?: 0.0

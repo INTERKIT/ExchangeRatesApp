@@ -2,13 +2,8 @@ package com.example.exchangeapp.data.model
 
 object RatesConverter {
 
-    fun fromApi(response: RatesResponse): List<Rate> {
-        val rates = mutableListOf<Rate>()
-
-        response.rates.forEach { (key, value) ->
-            rates.add(Rate(response.base, key, value))
+    fun fromApi(response: RatesResponse): List<Rate> =
+        response.rates.map { (key, value) ->
+            Rate(response.base, key, value)
         }
-
-        return rates
-    }
 }

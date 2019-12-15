@@ -36,10 +36,10 @@ class RatesViewHolder(
         symbolTextView.text = data.symbol
         nameTextView.text = data.name
 
-        if (!item.isZero()) {
-            valueEditText.setText(item.value.toString())
-        } else {
+        if (item.isZero()) {
             valueEditText.text.clear()
+        } else {
+            valueEditText.setText(item.value.toString())
         }
 
         if (position == 0) {
